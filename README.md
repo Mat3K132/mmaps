@@ -1,6 +1,6 @@
 Players must see other players cursors and flags,
 going to achieve that through WebSocket.
-Cloudflare for storage of data obtained by the web-app.
+Cloudflare for storage of data obtained by the web-app!
 
 Discord Bot ↔ Discord API:
 The bot responds to user commands (e.g., start game) and sends messages.
