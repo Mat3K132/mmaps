@@ -1,5 +1,6 @@
+import 'dotenv/config';
 import { Client, IntentsBitField, Message } from 'discord.js';
-import axios, { AxiosResponse, AxiosError } from 'axios'; // Add AxiosError
+import axios, { AxiosResponse, AxiosError } from 'axios';
 
 interface Env {
   DISCORD_TOKEN: string;
@@ -7,7 +8,6 @@ interface Env {
   HF_TOKEN?: string;
 }
 
-import 'dotenv/config';
 const { DISCORD_TOKEN, X_API_TOKEN, HF_TOKEN } = process.env as unknown as Env;
 
 const client = new Client({
@@ -111,4 +111,3 @@ client.on('messageCreate', async (message: Message) => {
 });
 
 client.login(DISCORD_TOKEN);
-
